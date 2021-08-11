@@ -6,7 +6,7 @@ function Checkout() {
   return (
     <div className="checkout">
       <div className="checkout__left">
-      <img className="checkout__ad" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Xiaomi/ILM/HDFC_1500/D21342770_WLD_Mi_Redmi_Note10ProMax_PC_640x45._CB644988387_.jpg"></img>
+      <img className="checkout__ad" src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"></img>
 
         <div>
           <h2 className="checkout__title">Your Shopping Basket</h2>
