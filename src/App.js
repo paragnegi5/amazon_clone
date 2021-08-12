@@ -10,8 +10,11 @@ function App() {
       <Header/>
       <Switch>
 
-        <Route path="/checkout">
+        <Route path="/login">
+          <h1>Login Page 3:23:35</h1>
+        </Route>
 
+        <Route path="/checkout">
           <Checkout/>
         </Route>
 
