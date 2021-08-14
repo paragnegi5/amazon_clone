@@ -16,7 +16,7 @@ function Login() {
       })
       .catch(error=>alert(error.message))
   }
-//4:09:00
+
   const register=e=>{
     e.preventDefault();
     auth.createUserWithEmailAndPassword(email,password)
@@ -47,7 +47,7 @@ function Login() {
         <button type="submit" onClick={signIn} className="login__signInButton">Sign In</button>
         </form>
 
-        <p>3:42:44 By signing-in you agree to Amazon's Condition of Use & Sale.
+        <p>By signing-in you agree to Amazon's Condition of Use & Sale.
           Please see our Privacy Notice, our Cookies Notice
           and our Interest-Based Ads Notice.</p>
 
