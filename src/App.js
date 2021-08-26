@@ -10,6 +10,7 @@ import { useStateValue } from './StateProvider';
 import Payment from './Payment';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
+import Orders from "./Orders";
 
 const promise=loadStripe('pk_test_51JRhgwSFwu6QPAe6gZMUZKDx0L9STWSIQ1NisvJxXOGxaZnpjTYy2phxMctd4UD2K1ihrUI5Snk7gWsbQmuFellB00Mn4Q5WdQ');
 
@@ -17,7 +18,7 @@ function App() {
   const [{}, dispatch]=useStateValue();
   useEffect(()=>{
     auth.onAuthStateChanged(authUser=>{
-      console.log("The User is >>>> ",authUser);
+      // console.log("The User is >>>> ",authUser);
       if(authUser){
         dispatch({
           type: 'SET_USER',
@@ -39,6 +40,11 @@ function App() {
     <div className="app">
 
       <Switch>
+
+        <Route path="/orders">
+          <Header />
+          <Orders />
+        </Route>
 
         <Route path="/login">
           <Login />
