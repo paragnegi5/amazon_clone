@@ -20,11 +20,9 @@ app.use(express.json());
 app.get('/',(req,res)=>res.status(200).send('hello world'))
 // app.get('/parag',(req,res)=>res.status(200).send('hello parag'))
 
-app.post('/payments/create', async (req,res)=>{
+app.post('/payments/create', async (req,res) => {
   const total=req.query.total;
   console.log("Payment request recieved  ===>>> ", total);
-  //7:00:00
-  //firebase emulators:start
 
   const paymentIntent = await stripe.paymentIntents.create({
     amount:total,
